@@ -16,7 +16,7 @@ class CashRegister
     
     count = 0
     while count < quantity
-      @items << @title
+      @items << @title unless @items.include(@title)
       count += 1
     end
   end
