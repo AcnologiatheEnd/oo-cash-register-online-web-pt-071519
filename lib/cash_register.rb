@@ -38,7 +38,7 @@ class CashRegister
     @total -= @price
     @items.delete(-1)
     if @items == []
-      total = 0.0
+      @total = 0.0
     end
     
   end
