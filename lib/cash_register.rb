@@ -13,7 +13,7 @@ class CashRegister
     @title = title
     @price = price
     @total += price*quantity
-    
+    @quantity = quantity
     count = 0
     while count < quantity
       @items << @title 
